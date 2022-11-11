@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>one page</title>
+    <link rel="stylesheet" href="node_modules/keen-slider/keen-slider.min.css" />
+    <script defer src="scripts.js"></script>
+</head>
+
+<body class="overflow-hidden transition-all ease-in duration-300" style="margin-top: 0px;">
+    <div class="up hidden fixed right-0 z-50" style="bottom: 50px;">
+        <button onclick="scrollup()">
+                <svg width="60px" height="60px" fill="#63B82C" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g data-name="Layer 2"><g data-name="arrow-ios-upward"><rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"/><path d="M18 15a1 1 0 0 1-.64-.23L12 10.29l-5.37 4.32a1 1 0 0 1-1.41-.15 1 1 0 0 1 .15-1.41l6-4.83a1 1 0 0 1 1.27 0l6 5a1 1 0 0 1 .13 1.41A1 1 0 0 1 18 15z"/></g></g></svg>
+            </button>
+    </div>
+    <div class="down fixed bottom-0 right-0 z-50">
+        <button onclick="scrolldown()">
+                <svg width="60px" height="60px" fill="#63B82C" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g data-name="Layer 2"><g data-name="arrow-ios-downward"><rect width="24" height="24" opacity="0"/><path d="M12 16a1 1 0 0 1-.64-.23l-6-5a1 1 0 1 1 1.28-1.54L12 13.71l5.36-4.32a1 1 0 0 1 1.41.15 1 1 0 0 1-.14 1.46l-6 4.83A1 1 0 0 1 12 16z"/></g></g></svg>
+            </button>
+    </div>
+    <!-- Start header -->
+    <div class="begin">
+        <div class="pr-36 pl-14 py-24 absolute rounded-r-xl -mt-64 bg-white" style="top: 450px;">
+            <img id="top" class="relative" src="img/R2H-webdevelopers-logo.png" width="1000px">
+        </div>
+        <div class="px-20 py-20 h-5/8 absolute rounded-l-xl right-0" style="top: 260px; width: 45%; background-color: #63B82C;">
+            <p class="text-white relative leading-tight" style="font-size: 7.5rem;">
+                Flexibel & <br> Doelgericht
+            </p>
+        </div>
+    </div>
+    <!-- Einde header -->
+    <!-- Start video -->
+    <div class="video" style="height: 1000px;">
+        <iframe src="https://player.vimeo.com/video/711102475?h=89ec5590ab&title=0&portrait=0&sidedock=0" style="position: relative; left: 8px;" width="1920" height="1080" frameborder="0" allow="autoplay; picture-in-picture"></iframe>
+    </div>
+    <!-- Einde video -->
+    <!-- Start Wat doen wij? -->
+    <div class="mt-28" style="height: 1080px; width: 1920px;">
+        <h1 class="wat-doen-wij text-center mb-10 text-9xl relative font-bold" style="color: #63B82C;">WAT DOEN WIJ?</h1>
+        <div class="flex justify-around -mt-16">
+            <div class="relative right-28" style="width: 100px; height: 800px;left: 50px;">
+                <div class="n14 rounded-full absolute left-1/2 top-1/2 z-20" style="margin-top: -25px; margin-left: -25px; width: 50px; height: 50px;background-color: #e00b0b; transform: scale(0);">
+                    <img src="icons/Wat-doen-wij/Online maatwerk icoon 1.svg" width="21" class="absolute top-1/2 left-1/2" style="margin-top: -11.5px; margin-left: -10.5px;">
+                    <p class="text-white absolute top-3/4 left-1/2 text-center font-bold" style="margin-left: -14px; margin-top: -1px; font-size: 3px;">ONLINE MAATWERK<br> APPLICATIE</p>
+                </div>
+                <div class="n15 rounded-full absolute left-1/2 top-1/2 z-10" style="margin-top: -25px; margin-left: -25px; width: 50px; height: 50px;border-color: #e00b0b; transform: scale(0);border-width: 3px;opacity: 0.4;">
+                </div>
+                <div class="n16 rounded-full absolute left-1/2 top-1/2 z-10" style="margin-top: -25px; margin-left: -25px; width: 50px; height: 50px;background-color: #e00b0b; transform: scale(0);opacity: 0.7;">
+                </div>
+                <div class="n17 rounded-full absolute left-1/2 top-1/2 z-10" style="margin-top: -25px; margin-left: -25px; width: 50px; height: 50px;background-color: #e00b0b; transform: scale(0);opacity: 0.7;">
+                </div>
+                <div class="n18 rounded-full absolute left-1/2 top-1/2 z-10" style="margin-top: -25px; margin-left: -25px; width: 50px; height: 50px;border-color: #e00b0b; transform: scale(0);border-width: 3px;opacity: 0.9;">
+                </div>
+                <div class="n19 rounded-full absolute left-1/2 top-1/2 z-10" style="margin-top: -25px; margin-left: -25px; width: 50px; height: 50px;background-color: #e00b0b; transform: scale(0);opacity: 0.6;">
+                </div>
+                <div class="n20 rounded-full absolute left-1/2 top-1/2 z-10" style="margin-top: -25px; margin-left: -25px; width: 50px; height: 50px;background-color: #e00b0b; transform: scale(0);opacity: 0.3;">
+                </div>
+                <div class="n21 rounded-full absolute left-1/2 top-1/2 z-10" style="margin-top: -25px; margin-left: -25px; width: 50px; height: 50px;background-color: #e00b0b; transform: scale(0);opacity: 0.6;">
+                </div>
+            </div>
+            <div class="relative" style="width: 100px; height: 800px; left: 20px;">
+                <div class="n1 rounded-full absolute left-1/2 top-1/2 z-20" style="margin-top: -25px; margin-left: -25px; width: 50px; height: 50px;background-color: #ff5e00; transform: scale(0);">
+                    <img src="icons/Wat-doen-wij/Website-Webshop.svg" width="23" class="absolute top-1/2 left-1/2" style="margin-top: -11.5px; margin-left: -11.5px;">
+                    <p class="text-white absolute top-3/4 left-1/2 font-bold" style="margin-left: -8px; font-size: 3px;">WEBSITES &<br> WEBSHOPS</p>
+                </div>
+                <div class="n2 rounded-full absolute left-1/2 top-1/2 z-10" style="margin-top: -25px; margin-left: -25px; width: 50px; height: 50px;border-color: #ff5e00; transform: scale(0);border-width: 3px;opacity: 0.5;">
+                </div>
+                <div class="n3 rounded-full absolute left-1/2 top-1/2 z-10" style="margin-top: -25px; margin-left: -25px; width: 50px; height: 50px;background-color: #ff5e00; transform: scale(0);opacity: 0.2;">
+                </div>
+                <div class="n4 rounded-full absolute left-1/2 top-1/2 z-10" style="margin-top: -25px; margin-left: -25px; width: 50px; height: 50px;background-color: #ff5e00; transform: scale(0);opacity: 0.7;">
+                </div>
+                <div class="n5 rounded-full absolute left-1/2 top-1/2 z-10" style="margin-top: -25px; margin-left: -25px; width: 50px; height: 50px;background-color: #ff5e00; transform: scale(0);opacity: 0.6;">
+                </div>
+                <div class="n6 rounded-full absolute left-1/2 top-1/2 z-10" style="margin-top: -25px; margin-left: -25px; width: 50px; height: 50px;border-color: #ff5e00; transform: scale(0);border-width: 3px;opacity: 0.7;">
+                </div>
+            </div>
+            <div class="relative right-28" style="width: 100px; height: 800px;left:20px;">
+                <div class="n7 rounded-full absolute left-1/2 top-1/2 z-20" style="margin-top: -25px; margin-left: -25px; width: 50px; height: 50px;background-color: #3B8DE3; transform: scale(0);">
+                    <img src="icons/Wat-doen-wij/Internet marketing.svg" width="21" class="absolute top-1/2 left-1/2" style="margin-top: -10.5px; margin-left: -10.5px;">
+                    <p class="text-white absolute top-3/4 left-1/2 text-center font-bold" style="margin-left: -8px; font-size: 3px;">ONLINE <br> MARKETING</p>
+                </div>
+                <div class="n8 rounded-full absolute left-1/2 top-1/2 z-10" style="margin-top: -25px; margin-left: -25px; width: 50px; height: 50px;background-color: #3B8DE3; transform: scale(0);opacity: 0.3;">
+                </div>
+                <div class="n9 rounded-full absolute left-1/2 top-1/2 z-10" style="margin-top: -25px; margin-left: -25px; width: 50px; height: 50px;border-color: #3B8DE3; transform: scale(0);border-width: 3px;opacity: 0.5;">
+                </div>
+                <div class="n10 rounded-full absolute left-1/2 top-1/2 z-10" style="margin-top: -25px; margin-left: -25px; width: 50px; height: 50px;background-color: #3B8DE3; transform: scale(0);opacity: 0.4;">
+                </div>
+                <div class="n11 rounded-full absolute left-1/2 top-1/2 z-10" style="margin-top: -25px; margin-left: -25px; width: 50px; height: 50px;background-color: #3B8DE3; transform: scale(0);opacity: 0.7;">
+                </div>
+                <div class="n12 rounded-full absolute left-1/2 top-1/2 z-10" style="margin-top: -25px; margin-left: -25px; width: 50px; height: 50px;border-color: #3B8DE3; transform: scale(0);border-width: 3px;opacity: 0.3;">
+                </div>
+                <div class="n13 rounded-full absolute left-1/2 top-1/2 z-10" style="margin-top: -25px; margin-left: -25px; width: 50px; height: 50px;background-color: #3B8DE3; transform: scale(0);opacity: 0.5;">
+                </div>
+            </div>
+        </div>
+        <div class="wat-text flex relative" style="top:-100px;left: 50%; right: auto; margin-left: -520px; opacity: 0;">
+            <div style="width: 500px;">
+                <div class="flex p-3" style="transform: scale(1.5);">
+                    <div class="mr-2 mt-1" style="border-radius: 50%;background-color:#63B82C;width:10px;height:10px;"></div>
+                    <p style="position: relative;bottom: 2px;font-weight: bolder;">Hybrid app</p>
+                </div>
+                <div class="flex p-3" style="transform: scale(1.5);">
+                    <div class="mr-2 mt-1" style="border-radius: 50%;background-color:#63B82C;width:10px;height:10px;"></div>
+                    <p style="position: relative;bottom: 2px;font-weight: bolder;">Data-migratie</p>
+                </div>
+                <div class="flex p-3" style="transform: scale(1.5);">
+                    <div class="mr-2 mt-1" style="border-radius: 50%;background-color:#63B82C;width:10px;height:10px;"></div>
+                    <p style="position: relative;bottom: 1px;font-weight: bolder;">Database & API's</p>
+                </div>
+            </div>
+            <div style="width: 500px;">
+                <div class="flex p-3" style="transform: scale(1.5);">
+                    <div class="mr-2 mt-1" style="border-radius: 50%;background-color:#63B82C;width:10px;height:10px;"></div>
+                    <p style="position: relative;bottom: 2px;font-weight: bolder;">Maatwerk web-applicaties</p>
+                </div>
+                <div class="flex p-3" style="transform: scale(1.5);">
+                    <div class="mr-2 mt-1" style="border-radius: 50%;background-color:#63B82C;width:10px;height:10px;"></div>
+                    <p style="position: relative;bottom: 2px;font-weight: bolder;">Visuals</p>
+                </div>
+                <div class="flex p-3" style="transform: scale(1.5);">
+                    <div class="mr-2 mt-1" style="border-radius: 50%;background-color:#63B82C;width:10px;height:10px;"></div>
+                    <p style="position: relative;bottom: 2px;font-weight: bolder;">Joomla extensies</p>
+                </div>
+            </div>
+            <div style="width: 500px;">
+                <div class="flex p-3" style="transform: scale(1.5);">
+                    <div class="mr-2 mt-1" style="border-radius: 50%;background-color:#63B82C;width:10px;height:10px;"></div>
+                    <p style="position: relative;bottom: 2px;font-weight: bolder;">Online marketing (SEO)</p>
+                </div>
+                <div class="flex p-3" style="transform: scale(1.5);">
+                    <div class="mr-2 mt-1" style="border-radius: 50%;background-color:#63B82C;width:10px;height:10px;"></div>
+                    <p style="position: relative;bottom: 2px;font-weight: bolder;">IOT (Internet of Things)</p>
+                </div>
+                <div class="flex p-3" style="transform: scale(1.5);">
+                    <div class="mr-2 mt-1" style="border-radius: 50%;background-color:#63B82C;width:10px;height:10px;"></div>
+                    <p style="position: relative;bottom: 2px;font-weight: bolder;">Portals en platformen</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Einde Wat doen wij? -->
+    <!-- Start Voor wie? -->
+    <div style="height: 1020px; overflow: hidden;">
+        <h1 class="text-center text-9xl font-bold mb-5" style="color: #63B82C;">VOOR WIE?</h1>
+        <div class="Voor-wie mx-auto">
+            <div class="flex justify-around relative my-10">
+                <div class="logos flex overflow-hidden" style="width: 400px; transform: scale(0); transform-origin: center;" onmouseenter="setimage(1)" onmouseleave="removeimage(1)">
+                    <img id="img1" class="image h-60 mx-auto w-60 transition-all duration-700" src="logos/Autotaalsglas.png" alt="autotaalglas">
+                    <img id="example1" class="h-56 w-0 transition-all duration-700" src='examples/Autotaalglas.png'>
+                </div>
+                <div class="logos flex overflow-hidden" style="width: 400px; transform: scale(0); transform-origin: center;" onmouseenter="setimage(2)" onmouseleave="removeimage(2)">
+                    <img id="img2" class="image h-60 mx-auto w-60 transition-all duration-700" src="logos/Expertisecentrum-Kinderopvang.png" alt="Expertisecentrum-Kinderopvang">
+                    <img id="example2" class="h-56 w-0 transition-all duration-700" src='examples/Expertisecentrum-Kinderopvang.png' ,>
+                </div>
+                <div class="logos flex overflow-hidden" style="width: 400px; transform: scale(0); transform-origin: center;" onmouseenter="setimage(3)" onmouseleave="removeimage(3)">
+                    <img id="img3" class="image h-60 mx-auto w-60 transition-all duration-700" src="logos/Gemeente-Amsterdam.png" alt="Gemeente-Amsterdam">
+                    <img id="example3" class="h-56 w-0 transition-all duration-700" src="examples/Andersom-Amsterdam.png">
+                </div>
+                <div class="logos flex overflow-hidden" style="width: 400px; transform: scale(0); transform-origin: center;" onmouseenter="setimage(4)" onmouseleave="removeimage(4)">
+                    <img id="img4" class="image h-60 mx-auto w-60 transition-all duration-700" src="logos/WonderWel.png" alt="WonderWel">
+                    <img id="example4" class="h-56 w-0 transition-all duration-700" src="examples/WonderWel (1).png">
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-around relative my-10">
+            <div class="logos flex overflow-hidden" style="width: 400px; transform: scale(0); transform-origin: center;" onmouseenter="setimage(5)" onmouseleave="removeimage(5)">
+                <img id="img5" class="image h-60 mx-auto w-60 transition-all duration-700" src="logos/Hiro-Schooljudo.png" alt="Hiro-Schooljudo">
+                <img id="example5" class="h-56 w-0 transition-all duration-700" src="examples/hiro.png">
+            </div>
+            <div class="logos flex overflow-hidden" style="width: 400px; transform: scale(0); transform-origin: center;" onmouseenter="setimage(6)" onmouseleave="removeimage(6)">
+                <img id="img6" class="image h-60 mx-auto w-60 transition-all duration-700" src="logos/RTL-Nederland.png" alt="RTL-Nederland">
+                <img id="example6" class="h-56 w-0 transition-all duration-700" src="examples/RTL-Nederland.png">
+            </div>
+            <div class="logos flex overflow-hidden" style="width: 400px; transform: scale(0); transform-origin: center;" onmouseenter="setimage(7)" onmouseleave="removeimage(7)">
+                <img id="img7" class="image h-60 mx-auto w-60 transition-all duration-700" src="logos/Johns-Rijopleiding.png" alt="Johns rijopleiding">
+                <img id="example7" class="h-56 w-0 transition-all duration-700" src="examples/John's-rijopleiding.png">
+            </div>
+            <div class="logos flex overflow-hidden" style="width: 400px; transform: scale(0); transform-origin: center;" onmouseenter="setimage(8)" onmouseleave="removeimage(8)">
+                <img id="img8" class="image h-60 mx-auto w-60 transition-all duration-700" src="logos/iXXXi.png" alt="iXXXi">
+                <img id="example8" class="h-56 w-0 transition-all duration-700" src="examples/ixxxi-jewerly.png">
+            </div>
+        </div>
+        <div class="flex justify-around relative my-10">
+            <div class="logos flex overflow-hidden" style="width: 400px; transform: scale(0); transform-origin: center;" onmouseenter="setimage(9)" onmouseleave="removeimage(9)">
+                <img id="img9" class="image h-60 mx-auto w-60 transition-all duration-700" src="logos/NL-Advocaten.png" alt="NL-Advocaten">
+                <img id="example9" class="h-56 w-0 transition-all duration-700" src="examples/NL-Advocaten.png">
+            </div>
+            <div class="logos flex overflow-hidden" style="width: 400px; transform: scale(0); transform-origin: center;" onmouseenter="setimage(10)" onmouseleave="removeimage(10)">
+                <img id="img10" class="image h-60 mx-auto w-60 transition-all duration-700" src="logos/Nordic-Fire.png" alt="Nordic-Fire">
+                <img id="example10" class="h-56 w-0 transition-all duration-700" src="examples/Nordic-Fire.png">
+            </div>
+            <div class="logos flex overflow-hidden" style="width: 400px; transform: scale(0); transform-origin: center;" onmouseenter="setimage(11)" onmouseleave="removeimage(11)">
+                <img id="img11" class="image h-60 mx-auto w-60 transition-all duration-700" src="logos/KWC-uv.png" alt="KWC-uv">
+                <img id="example11" class="h-56 w-0 transition-all duration-700" src="examples/KWC-uv.png">
+            </div>
+            <div class="logos flex overflow-hidden" style="width: 400px; transform: scale(0); transform-origin: center;" onmouseenter="setimage(12)" onmouseleave="removeimage(12)">
+                <img id="img12" class="image h-60 mx-auto w-60 transition-all duration-700" src="logos/Gemeente-Den-Haag.png" alt="Gemeente Den-Haag">
+                <img id="example12" class="h-56 w-0 transition-all duration-700" src="examples/Gemeente-Den-Haag (1).png">
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Einde Voor wie? -->
+    <!-- Start Waarmee? -->
+    <div class="mt-6" style="height: 1025px;">
+        <div>
+            <div class="relative" style="padding-top: 0px;">
+                <h1 class="waarmee absolute text-center text-9xl font-bold top-14 left-1/2" style="color: #63B82C; margin-left: -340.5px;">WAARMEE?</h1>
+            </div>
+        </div>
+        <div class="mx-auto top-28 relative" style="width: 1000px; height: 1000px;">
+            <div id="tool1" class="-z-10 absolute rounded-full mx-auto h-24 w-24" style="background-color: #63B82C; top: 50%; left: 50%; margin-left: -48px; margin-top: -48px; transform: rotate(0deg);">
+                <svg id="T1" style="stroke-dashoffset: 2000;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 30" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"><path d="M30.27702,50q-.423731,0,347.035493,0" transform="translate(-197.999999-34)" fill="none" stroke="#000"/><ellipse rx="10.745155" ry="10.745155" transform="matrix(-.39271 0 0-.392709 183.312514 16)" fill="none" stroke="#000" stroke-width="2"/></svg>
+                <div class="tooltext1 text-black absolute right-32 top-10 text-4xl font-bold transition-all overflow-hidden duration-1000" style="width: 0px; top: 5px; left: 340px;">
+                    <p style="width: 200px;">Database & API's</p>
+                </div>
+                <img class="w-14 mx-auto absolute top-5 right-5 -z-10" src="icons/Toolbox/Waterpomptang-transparant.png">
+                <div onmouseenter="extend(1)" onmouseleave="collaps(1)" class="absolute h-24 w-24 z-0"></div>
+            </div>
+            <div id="tool2" class="z-0 absolute rounded-full mx-auto h-24 w-24" style="top: 50%; left: 50%; margin-left: -48px; margin-top: -48px; background-color: #63B82C; transform: rotate(30deg);">
+                <div style="transform: rotate(-30deg); background-color: #63B82C;" class="absolute rounded-full transition-all mx-auto h-24 w-24">
+                    <svg id="T2" style="stroke-dashoffset: 2000;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 150" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"><path d="" transform="translate(-80-173)" fill="none" stroke="#3f5787" stroke-width="1.28"/><path d="M120.290839,240L320,240l59.33107,62.472128" transform="matrix(1.734824 0 0 1.734824-193.378039-403.546833)" fill="none" stroke="#000"/><ellipse rx="7.614403" ry="7.614403" transform="translate(469.305395 126.810927)" fill="none" stroke="#000"/></svg>
+                    <div class="tooltext2 text-black absolute text-4xl font-bold transition-all overflow-hidden duration-1000" style="left: 340px;top: 70px; width: 0px;">
+                        <p style="width: 200px;">Maatwerk Webapplicaties</p>
+                    </div>
+                    <img class="w-14 mx-auto absolute top-6 right-4 -z-10" src="icons/Toolbox/Kwast-transparant.png">
+                    <div onmouseenter="extend(2)" onmouseleave="collaps(2)" class="absolute h-24 w-24 z-0"></div>
+                </div>
+            </div>
+            <div id="tool3" class="z-10 absolute rounded-full mx-auto h-24 w-24" style="top: 50%; left: 50%; margin-left: -48px; margin-top: -48px; background-color: #63B82C; transform: rotate(60deg);">
+                <div style="transform: rotate(-60deg); background-color: #63B82C;" class="absolute rounded-full transition-all mx-auto h-24 w-24">
+                    <svg id="T3" style="stroke-dashoffset: 2000;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 150" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"><path d="" transform="translate(-80-173)" fill="none" stroke="#3f5787" stroke-width="1.28"/><path d="M120.290839,240L320,240l59.33107,62.472128" transform="matrix(1.734824 0 0 1.734824-193.378039-403.546833)" fill="none" stroke="#000"/><ellipse rx="7.614403" ry="7.614403" transform="translate(469.305395 126.810927)" fill="none" stroke="#000"/></svg>
+                    <div class="tooltext3 text-black absolute text-4xl font-bold transition-all overflow-hidden duration-1000" style="left: 340px; top: 65px; width: 0px;">
+                        <p style="width: 200px;">Joomla extensies</p>
+                    </div>
+                    <img class="w-14 mx-auto absolute top-5 right-5 -z-10" src="icons/Toolbox/Koptelefoon-transparant.png">
+                    <div onmouseenter="extend(3)" onmouseleave="collaps(3)" class="absolute h-24 w-24 z-0"></div>
+                </div>
+            </div>
+            <div id="tool4" class="z-20 absolute rounded-full mx-auto h-24 w-24" style="top: 50%; left: 50%; margin-left: -48px; margin-top: -48px; background-color: #63B82C; transform: rotate(90deg);">
+                <div style="transform: rotate(-90deg); background-color: #63B82C;" class="absolute rounded-full transition-all mx-auto h-24 w-24">
+                    <svg id="T4" style="stroke-dashoffset: 2000;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 150" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"><ellipse rx="7.614403" ry="7.614403" transform="translate(475.305395 131.810927)" fill="none" stroke="#000"/><path d="M95.305395,185.810927l95.435784,114h350.949813" transform="translate(-73.999999-168)" fill="none" stroke="#000" stroke-width="2"/></svg>
+                    <div class="tooltext4 text-black absolute text-4xl font-bold transition-all overflow-hidden duration-1000" style="left: 325px; top: 110px; width: 200px; width: 0px;">
+                        <p style="width: 200px;">Webshops</p>
+                    </div>
+                    <img class="w-14 mx-auto absolute top-5 right-5 -z-10" src="icons/Toolbox/Hamer.svg">
+                    <div onmouseenter="extend(4)" onmouseleave="collaps(4)" class="absolute h-24 w-24 z-0"></div>
+                </div>
+            </div>
+            <div id="tool5" class="z-30 absolute rounded-full mx-auto h-24 w-24" style="top: 50%; left: 50%; margin-left: -48px; margin-top: -48px; background-color: #63B82C; transform: rotate(120deg);">
+                <div style="transform: rotate(-120deg); background-color: #63B82C;" class="absolute rounded-full transition-all mx-auto h-24 w-24">
+                    <svg id="T5" style="stroke-dashoffset: 2000;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 150" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"><path d="" transform="translate(-80-173)" fill="none" stroke="#3f5787" stroke-width="1.28"/><path d="M120.290839,240L320,240l59.33107,62.472128" transform="matrix(1.734824 0 0 1.734824-193.378039-403.546833)" fill="none" stroke="#000"/><ellipse rx="7.614403" ry="7.614403" transform="translate(469.305395 126.810927)" fill="none" stroke="#000"/></svg>
+                    <div class="tooltext5 text-black absolute text-4xl font-bold transition-all overflow-hidden duration-1000" style="height:85px;width:0px; right: 340px; top: 60px;">
+                        <p class="absolute" style="width: 350px; text-align: right;right: 0px;">Grafisch vormgeven</p>
+                    </div>
+                    <img class="w-14 mx-auto absolute top-5 right-5 -z-10" src="icons/Toolbox/Moersleutel.svg">
+                    <div onmouseenter="extend(5)" onmouseleave="collaps(5)" class="absolute h-24 w-24 z-0"></div>
+                </div>
+            </div>
+            <div id="tool6" class="z-40 absolute rounded-full mx-auto h-24 w-24" style="top: 50%; left: 50%; margin-left: -48px; margin-top: -48px; background-color: #63B82C; transform: rotate(150deg);">
+                <div style="transform: rotate(-150deg); background-color: #63B82C;" class="absolute rounded-full transition-all mx-auto h-24 w-24">
+                    <svg id="T6" style="stroke-dashoffset: 2000;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 150" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"><path d="" transform="translate(-80-173)" fill="none" stroke="#3f5787" stroke-width="1.28"/><path d="M120.290839,240L320,240l59.33107,62.472128" transform="matrix(1.734824 0 0 1.734824-193.378039-403.546833)" fill="none" stroke="#000"/><ellipse rx="7.614403" ry="7.614403" transform="translate(469.305395 126.810927)" fill="none" stroke="#000"/></svg>
+                    <div class="tooltext6 text-black absolute text-4xl font-bold transition-all overflow-hidden duration-1000" style="height: 80px; width: 0px; right: 340px; top: 65px;">
+                        <p class="absolute" style="width: 200px; height: 100px; text-align: right;right: 0px;">Support & onderhoud</p>
+                    </div>
+                    <img class="w-14 mx-auto absolute top-5 right-5 -z-10" src="icons/Toolbox/Zaag.svg">
+                    <div onmouseenter="extend(6)" onmouseleave="collaps(6)" class="absolute h-24 w-24 z-0"></div>
+                </div>
+            </div>
+            <div id="tool7" class="z-50 absolute rounded-full mx-auto h-24 w-24" style="top: 50%; left: 50%; margin-left: -48px; margin-top: -48px; background-color: #63B82C; transform: rotate(180deg);">
+                <div style="transform: rotate(180deg); background-color: #63B82C;" class="absolute rounded-full transition-all mx-auto h-24 w-24">
+                    <svg id="T7" style="stroke-dashoffset: 2000;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 30" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"><path d="M30.27702,50q-.423731,0,347.035493,0" transform="translate(-197.999999-34)" fill="none" stroke="#000"/><ellipse rx="10.745155" ry="10.745155" transform="matrix(-.39271 0 0-.392709 183.312514 16)" fill="none" stroke="#000" stroke-width="2"/></svg>
+                    <div class="tooltext7 text-black absolute text-4xl font-bold transition-all overflow-hidden duration-1000" style="height: 60px; width: 0px; right: 340px; top: 20px;">
+                        <p class="absolute" style="width: 370px; text-align: right;right: 10px;">Hybrid apps</p>
+                    </div>
+                    <img class="w-14 mx-auto absolute top-6 right-5 -z-10" src="icons/Toolbox/Breekhamer-transparant.png">
+                    <div onmouseenter="extend(7)" onmouseleave="collaps(7)" class="absolute h-24 w-24 z-0"></div>
+                </div>
+            </div>
+            <div id="tool8" class="z-40 absolute rounded-full mx-auto h-24 w-24" style="top: 50%; left: 50%; margin-left: -48px; margin-top: -48px; background-color: #63B82C; transform: rotate(210deg);">
+                <div style="transform: rotate(150deg); background-color: #63B82C;" class="absolute rounded-full transition-all mx-auto h-24 w-24">
+                    <svg id="T8" style="stroke-dashoffset: 2000;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 150" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"><path d="" transform="translate(-80-173)" fill="none" stroke="#3f5787" stroke-width="1.28"/><path d="M120.290839,240L320,240l59.33107,62.472128" transform="matrix(1.734824 0 0 1.734824-193.378039-403.546833)" fill="none" stroke="#000"/><ellipse rx="7.614403" ry="7.614403" transform="translate(469.305395 126.810927)" fill="none" stroke="#000"/></svg>
+                    <div class="tooltext8 text-black transition-all absolute text-4xl font-bold overflow-hidden duration-1000" style="height: 60px; width: 0px;right: 340px; top: -32px;">
+                        <p class="absolute" style="width: 200px; text-align: right;right: 0px;">Hosting</p>
+                    </div>
+                    <img class="w-14 mx-auto absolute top-5 right-5 -z-10" src="icons/Toolbox/Schep-transparant.png">
+                    <div onmouseenter="extend(8)" onmouseleave="collaps(8)" class="absolute h-24 w-24 z-0"></div>
+                </div>
+            </div>
+            <div id="tool9" class="z-30 absolute rounded-full mx-auto h-24 w-24" style="top: 50%; left: 50%; margin-left: -48px; margin-top: -48px; background-color: #63B82C; transform: rotate(240deg);">
+                <div style="transform: rotate(120deg); background-color: #63B82C;" class="absolute rounded-full transition-all mx-auto h-24 w-24">
+                    <svg id="T9" style="stroke-dashoffset: 2000;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 150" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"><path d="" transform="translate(-80-173)" fill="none" stroke="#3f5787" stroke-width="1.28"/><path d="M120.290839,240L320,240l59.33107,62.472128" transform="matrix(1.734824 0 0 1.734824-193.378039-403.546833)" fill="none" stroke="#000"/><ellipse rx="7.614403" ry="7.614403" transform="translate(469.305395 126.810927)" fill="none" stroke="#000"/></svg>
+                    <div class="tooltext9 text-black transition-all absolute text-4xl font-bold overflow-hidden duration-1000" style="height: 80px; width: 0px;right: 340px;top: -55px;">
+                        <p class="absolute" style="width: 400px; text-align: right;right: 0px;">Technisch ontwerp & Functioneel ontwerp</p>
+                    </div>
+                    <img class="w-14 mx-auto absolute top-6 left-5 -z-10" src="icons/Toolbox/meetlint.svg">
+                    <div onmouseenter="extend(9)" onmouseleave="collaps(9)" class="absolute h-24 w-24 z-0"></div>
+                </div>
+            </div>
+            <div id="tool10" class="z-20 absolute rounded-full mx-auto h-24 w-24" style="top: 50%; left: 50%; margin-left: -48px; margin-top: -48px; background-color: #63B82C; transform: rotate(270deg);">
+                <div style="transform: rotate(90deg); background-color: #63B82C;" class="absolute rounded-full transition-all mx-auto h-24 w-24">
+                    <svg id="T10" style="stroke-dashoffset: 2000;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 150" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"><ellipse rx="7.614403" ry="7.614403" transform="translate(475.305395 131.810927)" fill="none" stroke="#000"/><path d="M95.305395,185.810927l95.435784,114h350.949813" transform="translate(-73.999999-168)" fill="none" stroke="#000" stroke-width="2"/></svg>
+                    <div class="tooltext10 text-black absolute text-4xl font-bold transition-all overflow-hidden duration-1000" style="height: 80px; top: -36px; right: 260px; width: 0px;">
+                        <p class="absolute" style="width: 200px; text-align: right;right: 0px;">Websites</p>
+                    </div>
+                    <img class="w-14 mx-auto absolute top-5 right-5 -z-10" src="icons/Toolbox/Waterpas-transparant.png">
+                    <div onmouseenter="extend(10)" onmouseleave="collaps(10)" class="absolute h-24 w-24 z-0"></div>
+                </div>
+            </div>
+            <div id="tool11" class="z-10 absolute rounded-full mx-auto h-24 w-24" style="top: 50%; left: 50%; margin-left: -48px; margin-top: -48px; background-color: #63B82C; transform: rotate(300deg);">
+                <div style="transform: rotate(60deg); background-color: #63B82C;" class="absolute rounded-full transition-all mx-auto h-24 w-24">
+                    <svg id="T11" style="stroke-dashoffset: 2000;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 150" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"><path d="" transform="translate(-80-173)" fill="none" stroke="#3f5787" stroke-width="1.28"/><path d="M120.290839,240L320,240l59.33107,62.472128" transform="matrix(1.734824 0 0 1.734824-193.378039-403.546833)" fill="none" stroke="#000"/><ellipse rx="7.614403" ry="7.614403" transform="translate(469.305395 126.810927)" fill="none" stroke="#000"/></svg>
+                    <div class="tooltext11 text-black absolute left-32 text-4xl font-bold transition-all overflow-hidden duration-1000" style="height: 60px; width: 0px; top: -30px; left:340px;">
+                        <p style="width: 400px;">Content beheer</p>
+                    </div>
+                    <img class="w-14 mx-auto absolute top-7 right-4" src="icons/Toolbox/Boor.svg">
+                    <div onmouseenter="extend(11)" onmouseleave="collaps(11)" class="absolute h-24 w-24 z-0"></div>
+                </div>
+            </div>
+            <div id="tool12" class="z-0 absolute rounded-full mx-auto h-24 w-24" style="top: 50%; left: 50%; margin-left: -48px; margin-top: -48px; background-color: #63B82C; transform: rotate(330deg);">
+                <div style="transform: rotate(30deg); background-color: #63B82C;" class="absolute rounded-full transition-all mx-auto h-24 w-24">
+                    <svg id="T12" style="stroke-dashoffset: 2000;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 150" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"><path d="" transform="translate(-80-173)" fill="none" stroke="#3f5787" stroke-width="1.28"/><path d="M120.290839,240L320,240l59.33107,62.472128" transform="matrix(1.734824 0 0 1.734824-193.378039-403.546833)" fill="none" stroke="#000"/><ellipse rx="7.614403" ry="7.614403" transform="translate(469.305395 126.810927)" fill="none" stroke="#000"/></svg>
+                    <div class="tooltext12 text-black absolute left-32 text-4xl font-bold transition-all overflow-hidden duration-1000" style="height: 90px; top: -55px; left:340px; width: 0px;">
+                        <p style="width: 200px;">Online marketing</p>
+                    </div>
+                    <img class="w-14 mx-auto absolute top-5 right-5" src="icons/Toolbox/Schroevedraaier.svg">
+                    <div onmouseenter="extend(12)" onmouseleave="collaps(12)" class="absolute h-24 w-24 z-0"></div>
+                </div>
+            </div>
+            <img src="icons/Toolbox/tool-box-icoon.svg" onclick="extendall()" class="toolbox absolute h-80 z-50" style="top: 50%; left: 50%; margin-top: -160px; margin-left: -155px;">
+        </div>
+    </div>
+    <!-- Einde Waarmee? -->
+    <!-- Start Waardering van de klanten? -->
+    <div class="relative mt-14" style="height: 1080px; background-color: #E4E4E4;">
+        <h1 class="pt-20 mb-32 text-left text-9xl font-bold" style="margin-left:750px;color: #63B82C; width: 850px;"><span class="text-8xl">REVIEWS VAN</span> <br> KLANTEN</h1>
+        <img class="absolute top-24 left-1/4 -mt-2" width="250px" src="img/google-icon.png">
+        <div class="">
+            <div class="m-auto h-full">
+                <div id="my-keen-slider" class="keen-slider mx-auto" style="opacity: 0; transform: translatey(500px); height: 500px; margin-left: -203px; width: 1905px;">
+                    <div class="keen-slider__slide number-slide1 grayout py-12 rounded-xl px-20" style="background-color: white;">
+                        <div class="flex items-center">
+                            <!-- Profiel foto -->
+                            <img src="img/Sandra_Maijen.png" alt="Emily Selman." class="h-20 w-20 rounded-full">
+                            <div class="ml-4">
+                                <h4 class="text-xl font-bold text-black">Sandra Maijen</h4>
+                                <p class="text-black text-sm">2 reviews</p>
+                                <div class="mt-1 flex items-center">
+                                    <svg class="h-5 w-5 flex-shrink-0" style="color:#FBBC05;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                    <svg class="h-5 w-5 flex-shrink-0" style="color:#FBBC05;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                    <svg class="h-5 w-5 flex-shrink-0" style="color:#FBBC05;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                    <svg class="h-5 w-5 flex-shrink-0" style="color:#FBBC05;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                    <svg class="h-5 w-5 flex-shrink-0" style="color:#FBBC05;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                    <p class="text-black text-sm ml-3">een jaar geleden</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4 space-y-6 text-base text-gray-600 flex items-top" style="height: 100px;">
+                            <p class="text-gray-500 text-2xl">
+                                We werken al jaren samen met R2H.
+                                <span class="text-black font-bold">Denken echt met je mee</span> en geven <span class="text-black font-bold">eerlijk advies</span>. Ze zijn <span class="text-black font-bold">erg flexibel.</span> De ontwikkelingen in de
+                                markt worden op de voet gevolgd en hun kennis wordt continue bijgespijkerd waardoor ze goed kunnen bepalen wat dan voor onze website of vraagstuk het beste is.<br>
+                                <span class="text-black font-bold">Open en eerlijke communicatie.</span> We zijn erg blij!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="keen-slider__slide number-slide2 grayout py-12 rounded-xl px-20" style="background-color: white;">
+                        <div class="flex items-center">
+                            <!-- Profiel foto -->
+                            <img src="img/Istr.png" alt="Emily Selman." class="h-20 w-20 rounded-full">
+                            <div class="ml-4">
+                                <h4 class="text-xl font-bold text-black">I str</h4>
+                                <p class="text-black text-sm">9 reviews</p>
+                                <div class="mt-1 flex items-center">
+                                    <svg class="h-5 w-5 flex-shrink-0" style="color:#FBBC05;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                    <svg class="h-5 w-5 flex-shrink-0" style="color:#FBBC05;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                    <svg class="h-5 w-5 flex-shrink-0" style="color:#FBBC05;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                    <svg class="h-5 w-5 flex-shrink-0" style="color:#FBBC05;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                    <svg class="h-5 w-5 flex-shrink-0" style="color:#FBBC05;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                    <p class="text-black text-sm ml-3">een jaar geleden</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4 space-y-6 text-base text-gray-600 flex items-top" style="height: 100px;">
+                            <p class="text-gray-500 text-2xl">
+                                R2H heeft me <span class="text-black font-bold">geholpen</span> met het realiseren van mijn nieuwe site, niet alleen door het CMS goed te regelen maar ook (en belangrijker) door goed met de vormgever op te trekken. En ook
+                                <span class="text-black font-bold">heul betaalbaar!</span> Een absolute aanrader.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="keen-slider__slide number-slide3 grayout py-12 rounded-xl px-20" style="background-color: white;">
+                        <div class="flex items-center">
+                            <!-- Profiel foto -->
+                            <img src="img/Rein_Hannik.png" alt="Emily Selman." class="h-20 w-20 rounded-full">
+                            <div class="ml-4">
+                                <h4 class="text-xl font-bold text-black">Rein Hannik</h4>
+                                <p class="text-black text-sm">een review</p>
+                                <div class="mt-1 flex items-center">
+                                    <svg class="h-5 w-5 flex-shrink-0" style="color:#FBBC05;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                    <svg class="h-5 w-5 flex-shrink-0" style="color:#FBBC05;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                    <svg class="h-5 w-5 flex-shrink-0" style="color:#FBBC05;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                    <svg class="h-5 w-5 flex-shrink-0" style="color:#FBBC05;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                    <svg class="h-5 w-5 flex-shrink-0" style="color:#FBBC05;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                    <p class="text-black text-sm ml-3">2 jaar geleden</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4 space-y-6 text-base text-gray-600 flex items-top" style="height: 100px;">
+                            <p class="text-gray-500 text-2xl">
+                                Ik ben op R2H gestuit toen ik aan het googlen was naar een Joomla specialist om mijn website (reinhannik.nl) te reviseren. Rick Spaan van R2H bleek niet alleen over technische expertise te beschikken,<br> hij was tevens
+                                <span class="text-black font-bold"> bijzonder aangenaam in de omgang.</span> Mijn website staat nu als een huis, terwijl ik alle vrijheid heb om hem van smoel te veranderen. Ook voor tussentijdse <span class="text-black font-bold">advies</span>                                kan ik altijd bij Rick aankloppen. <span class="text-black font-bold"> Hij reageert snel</span> en zijn prijs is schappelijk. Kortom, een echte aanrader. En nee, ik krijg geen gratis consult voor deze review...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="keen-slider__slide number-slide4 grayout py-12 rounded-xl px-20" style="background-color: white;">
+                        <div class="flex items-center">
+                            <!-- Profiel foto -->
+                            <img src="img/GertvanG.png" alt="Emily Selman." class="h-20 w-20 rounded-full">
+                            <div class="ml-4">
+                                <h4 class="text-xl font-bold text-black">Gert van Grunsven</h4>
+                                <p class="text-black text-sm">2 reviews</p>
+                                <div class="mt-1 flex items-center">
+                                    <svg class="h-5 w-5 flex-shrink-0" style="color:#FBBC05;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                    <svg class="h-5 w-5 flex-shrink-0" style="color:#FBBC05;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                    <svg class="h-5 w-5 flex-shrink-0" style="color:#FBBC05;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                    <svg class="h-5 w-5 flex-shrink-0" style="color:#FBBC05;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                    <svg class="h-5 w-5 flex-shrink-0" style="color:#FBBC05;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                    <p class="text-black text-sm ml-3">een jaar geleden</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4 space-y-6 text-base text-gray-600 flex items-top" style="height: 100px;">
+                            <p class="text-gray-500 text-2xl">
+                                R2H is een fijne club waar je <span class="text-black font-bold">persoonlijk geholpen</span> wordt. mensen <span class="text-black font-bold">denken met je mee</span> en zijn <span class="text-black font-bold">experts op hun vakgebied</span>.
+                                Aanrader!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Einde Waardering van de klanten? -->
+    <!-- Start met wie? -->
+
+    <div style="height: 1080px;">
+        <h1 class="text-center text-9xl mt-20 font-bold mb-24" style="color: #63B82C;">MET WIE?</h1>
+        <div class="Met-wie relative flex w-full" style="height: 700px;">
+            <div class="left relative rounded-r-2xl overflow-hidden" style="opacity: 0; transform: translateX(-900px); width: 1100px; height: 700px; background-image: url(img/Groepsfoto-2019.jpg); background-size: cover; background-color: #E4E4E4;">
+            </div>
+            <div style="width: 700px; height: 700px;">
+                <div id="fade" class="right px-4 py-12 top-1/4 rounded-l-xl absolute right-0" style="opacity: 0; transform: translateX(800px); width: 968px; height: 450px; background-color: #63B82C;; color: white; top: 18%;">
+                    <div class="maincontainer flex">
+                        <div class="containerCircle">
+                            <p class="text1 text"> 0 </p>
+                            <p class="textdesciption text-center text-3xl">PROFESSIONALS</p>
+                            <div class="circleCount"></div>
+                        </div>
+                        <div class="containerCircle">
+                            <p class="text2 text" style="left: 60px;"> 100 </p>
+                            <p class="textdesciption text-center text-3xl">GEMAAKTE WEBSITES</p>
+                            <div class="circleCount"></div>
+                        </div>
+                        <div class="containerCircle">
+                            <p class="text3 text"> 0 </p>
+                            <p class="textdesciption text-center text-3xl">JAAR <br> ERVARING</p>
+                            <div class="circleCount"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Einde met wie? -->
+    <!-- Start Wat is jouw wens? -->
+
+    <div class="-mt-10 relative" style="height: 1080px;">
+        <ul class="circles right z-0">
+            <li>
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 318.293 318.293" style="enable-background:new 0 0 318.293 318.293;" xml:space="preserve">
+                    <g>
+                        <path fill="#63B82C" d="M159.148,0c-52.696,0-95.544,39.326-95.544,87.662h47.736c0-22.007,21.438-39.927,47.808-39.927
+                        c26.367,0,47.804,17.92,47.804,39.927v6.929c0,23.39-10.292,34.31-25.915,50.813c-20.371,21.531-45.744,48.365-45.744,105.899
+                        h47.745c0-38.524,15.144-54.568,32.692-73.12c17.368-18.347,38.96-41.192,38.96-83.592v-6.929C254.689,39.326,211.845,0,159.148,0z
+                        " />
+                        <rect fill="#63B82C" x="134.475" y="277.996" width="49.968" height="40.297" />
+                </svg>
+            </li>
+            <li>
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 318.293 318.293" style="enable-background:new 0 0 318.293 318.293;" xml:space="preserve">
+                    <g>
+                        <path fill="#63B82C" d="M159.148,0c-52.696,0-95.544,39.326-95.544,87.662h47.736c0-22.007,21.438-39.927,47.808-39.927
+                    c26.367,0,47.804,17.92,47.804,39.927v6.929c0,23.39-10.292,34.31-25.915,50.813c-20.371,21.531-45.744,48.365-45.744,105.899
+                    h47.745c0-38.524,15.144-54.568,32.692-73.12c17.368-18.347,38.96-41.192,38.96-83.592v-6.929C254.689,39.326,211.845,0,159.148,0z
+                    " />
+                        <rect fill="#63B82C" x="134.475" y="277.996" width="49.968" height="40.297" />
+                </svg>
+            </li>
+            <li>
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 318.293 318.293" style="enable-background:new 0 0 318.293 318.293;" xml:space="preserve">
+                    <g>
+                        <path fill="#63B82C" d="M159.148,0c-52.696,0-95.544,39.326-95.544,87.662h47.736c0-22.007,21.438-39.927,47.808-39.927
+                    c26.367,0,47.804,17.92,47.804,39.927v6.929c0,23.39-10.292,34.31-25.915,50.813c-20.371,21.531-45.744,48.365-45.744,105.899
+                    h47.745c0-38.524,15.144-54.568,32.692-73.12c17.368-18.347,38.96-41.192,38.96-83.592v-6.929C254.689,39.326,211.845,0,159.148,0z
+                    " />
+                        <rect fill="#63B82C" x="134.475" y="277.996" width="49.968" height="40.297" />
+                </svg>
+            </li>
+            <li>
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 318.293 318.293" style="enable-background:new 0 0 318.293 318.293;" xml:space="preserve">
+                    <g>
+                        <path fill="#63B82C" d="M159.148,0c-52.696,0-95.544,39.326-95.544,87.662h47.736c0-22.007,21.438-39.927,47.808-39.927
+                        c26.367,0,47.804,17.92,47.804,39.927v6.929c0,23.39-10.292,34.31-25.915,50.813c-20.371,21.531-45.744,48.365-45.744,105.899
+                        h47.745c0-38.524,15.144-54.568,32.692-73.12c17.368-18.347,38.96-41.192,38.96-83.592v-6.929C254.689,39.326,211.845,0,159.148,0z
+                        " />
+                        <rect fill="#63B82C" x="134.475" y="277.996" width="49.968" height="40.297" />
+                </svg>
+            </li>
+            <li>
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 318.293 318.293" style="enable-background:new 0 0 318.293 318.293;" xml:space="preserve">
+                    <g>
+                        <path fill="#63B82C" d="M159.148,0c-52.696,0-95.544,39.326-95.544,87.662h47.736c0-22.007,21.438-39.927,47.808-39.927
+                        c26.367,0,47.804,17.92,47.804,39.927v6.929c0,23.39-10.292,34.31-25.915,50.813c-20.371,21.531-45.744,48.365-45.744,105.899
+                        h47.745c0-38.524,15.144-54.568,32.692-73.12c17.368-18.347,38.96-41.192,38.96-83.592v-6.929C254.689,39.326,211.845,0,159.148,0z
+                        " />
+                        <rect fill="#63B82C" x="134.475" y="277.996" width="49.968" height="40.297" />
+                </svg>
+            </li>
+            <li>
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 318.293 318.293" style="enable-background:new 0 0 318.293 318.293;" xml:space="preserve">
+                    <g>
+                        <path fill="#63B82C" d="M159.148,0c-52.696,0-95.544,39.326-95.544,87.662h47.736c0-22.007,21.438-39.927,47.808-39.927
+                        c26.367,0,47.804,17.92,47.804,39.927v6.929c0,23.39-10.292,34.31-25.915,50.813c-20.371,21.531-45.744,48.365-45.744,105.899
+                        h47.745c0-38.524,15.144-54.568,32.692-73.12c17.368-18.347,38.96-41.192,38.96-83.592v-6.929C254.689,39.326,211.845,0,159.148,0z
+                        " />
+                        <rect fill="#63B82C" x="134.475" y="277.996" width="49.968" height="40.297" />
+                </svg>
+            </li>
+            <li>
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 318.293 318.293" style="enable-background:new 0 0 318.293 318.293;" xml:space="preserve">
+                    <g>
+                        <path fill="#63B82C" d="M159.148,0c-52.696,0-95.544,39.326-95.544,87.662h47.736c0-22.007,21.438-39.927,47.808-39.927
+                        c26.367,0,47.804,17.92,47.804,39.927v6.929c0,23.39-10.292,34.31-25.915,50.813c-20.371,21.531-45.744,48.365-45.744,105.899
+                        h47.745c0-38.524,15.144-54.568,32.692-73.12c17.368-18.347,38.96-41.192,38.96-83.592v-6.929C254.689,39.326,211.845,0,159.148,0z
+                        " />
+                        <rect fill="#63B82C" x="134.475" y="277.996" width="49.968" height="40.297" />
+                </svg>
+            </li>
+            <li>
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 318.293 318.293" style="enable-background:new 0 0 318.293 318.293;" xml:space="preserve">
+                    <g>
+                        <path fill="#63B82C" d="M159.148,0c-52.696,0-95.544,39.326-95.544,87.662h47.736c0-22.007,21.438-39.927,47.808-39.927
+                        c26.367,0,47.804,17.92,47.804,39.927v6.929c0,23.39-10.292,34.31-25.915,50.813c-20.371,21.531-45.744,48.365-45.744,105.899
+                        h47.745c0-38.524,15.144-54.568,32.692-73.12c17.368-18.347,38.96-41.192,38.96-83.592v-6.929C254.689,39.326,211.845,0,159.148,0z
+                        " />
+                        <rect fill="#63B82C" x="134.475" y="277.996" width="49.968" height="40.297" />
+                </svg>
+            </li>
+            <li>
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 318.293 318.293" style="enable-background:new 0 0 318.293 318.293;" xml:space="preserve">
+                    <g>
+                        <path fill="#63B82C" d="M159.148,0c-52.696,0-95.544,39.326-95.544,87.662h47.736c0-22.007,21.438-39.927,47.808-39.927
+                        c26.367,0,47.804,17.92,47.804,39.927v6.929c0,23.39-10.292,34.31-25.915,50.813c-20.371,21.531-45.744,48.365-45.744,105.899
+                        h47.745c0-38.524,15.144-54.568,32.692-73.12c17.368-18.347,38.96-41.192,38.96-83.592v-6.929C254.689,39.326,211.845,0,159.148,0z
+                        " />
+                        <rect fill="#63B82C" x="134.475" y="277.996" width="49.968" height="40.297" />
+                </svg>
+            </li>
+            <li>
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 318.293 318.293" style="enable-background:new 0 0 318.293 318.293;" xml:space="preserve">
+                    <g>
+                        <path fill="#63B82C" d="M159.148,0c-52.696,0-95.544,39.326-95.544,87.662h47.736c0-22.007,21.438-39.927,47.808-39.927
+                        c26.367,0,47.804,17.92,47.804,39.927v6.929c0,23.39-10.292,34.31-25.915,50.813c-20.371,21.531-45.744,48.365-45.744,105.899
+                        h47.745c0-38.524,15.144-54.568,32.692-73.12c17.368-18.347,38.96-41.192,38.96-83.592v-6.929C254.689,39.326,211.845,0,159.148,0z
+                        " />
+                        <rect fill="#63B82C" x="134.475" y="277.996" width="49.968" height="40.297" />
+                </svg>
+            </li>
+        </ul>
+        <h1 class="text-center text-9xl font-bold mb-10" style="color: #63B82C;">WAT IS JOUW WENS?</h1>
+        <div class="absolute left-1/2 ml w-4/6 h-full z-10" id="container" style="margin-left: -640px;">
+            <video autoplay="true" id="videoElement" style="width:1280px; height:720px;">
+                </video>
+        </div>
+    </div>
+
+    <!-- Einde Wat is jouw wens? -->
+    <!-- Start Voorbeeld: WEBSHOPS -->
+    <div class="-mt-10 pt-24 mx-auto bg-gray-200" style="height: 1080px;">
+        <div class="flex justify-around relative ">
+            <div class="flex-row">
+                <h1 id="bottom" class="text-center text-4xl font-bold mb-10" style="color: black;">WEBSITES</h1>
+                <a href="https://www.janotsbos.eu/en/" target="_blank">
+                    <div class="flex h-14 my-6 bg-white" style="width: 400px; height: 108px">
+                        <img style="height: 108px;" src="maatwerk/JanotsBos.png" alt="Lost-in-Europe">
+                        <p class="m-auto text-2xl ">Janots Bos</p>
+                    </div>
+                </a>
+                <a href="https://www.bodymind-regie.nl/" target="_blank">
+                    <div class="flex h-14 my-6 bg-white" style="width: 400px; height: 108px">
+                        <img style="height: 108px;" src="websites/BodyMindRegie.png" alt="Body&MindRegie">
+                        <p class="m-auto text-2xl">Body&MindRegie</p>
+                    </div>
+                </a>
+                <a href="https://geschiedenislokaalamsterdam.nl/" target="_blank">
+                    <div class="flex h-14 my-6 bg-white" style="width: 400px; height: 108px">
+                        <img style="height: 108px;" src="websites/Geschiedenislokaal-Amsterdam.png" alt="Geschiedenislokaal">
+                        <p class="m-auto text-2xl">Geschiedenislokaal</p>
+                    </div>
+                </a>
+            </div>
+            <div class="flex-row">
+                <h1 class="text-center text-4xl font-bold mb-10" style="color: black;">MAATWERK</h1>
+                <a href="https://zangexpress.nl/" target="_blank">
+                    <div class="flex h-14 my-6 bg-white" style="width: 400px; height: 108px">
+                        <img style="height: 108px;" src="maatwerk/ZangExpress.png" alt="ZangExpress">
+                        <p class="m-auto text-2xl">ZangExpress</p>
+                    </div>
+                </a>
+                <a href="https://mijn.hiro.school/login" target="_blank">
+                    <div class="flex h-14 my-6 bg-white" style="width: 400px; height: 108px">
+                        <img style="height: 108px;" src="maatwerk/Hiro.png" alt="Hiro">
+                        <p class="m-auto text-2xl">Hiro</p>
+                    </div>
+                </a>
+                <a href="https://garantieregistratie.nordicfire.nl/login" target="_blank">
+                    <div class="flex h-14 my-6 bg-white" style="width: 400px; height: 108px">
+                        <img style="height: 108px;" src="maatwerk/Nordic-fire.png" alt="Nordic-Fire">
+                        <p class="m-auto text-2xl">Nordic-Fire</p>
+                    </div>
+                </a>
+            </div>
+            <div class="flex-row">
+                <h1 class="text-center text-4xl font-bold mb-10" style="color: black;">WEBSHOPS</h1>
+                <a href="https://follyfoam.com/nl/" target="_blank">
+                    <div class="flex h-14 my-6 bg-white" style="width: 400px; height: 108px">
+                        <img style="height: 108px;" src="webshops/Folly-Foam.png" alt="Folly-Foam">
+                        <p class="m-auto text-2xl">Folly-Foam</p>
+                    </div>
+                </a>
+                <a href="https://www.stofnodig.nl/" target="_blank">
+                    <div class="flex h-14 my-6 bg-white" style="width: 400px; height: 108px">
+                        <img style="height: 108px;" src="webshops/Stofnodig.png" alt="Stofnodig">
+                        <p class="m-auto text-2xl">Stofnodig</p>
+                    </div>
+                </a>
+                <a href="https://fremat.nl/" target="_blank">
+                    <div class="flex h-14 my-6 bg-white" style="width: 400px; height: 108px">
+                        <img style="height: 108px;" src="webshops/Fremat.png" alt="Fremat">
+                        <p class="m-auto text-2xl">Fremat</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="flex relative justify-around">
+            <!-- Row WEBSITES -->
+            <div class="flex-row" style="margin-top: -30px;">
+                <a href="https://www.logistiekcentrumdongen.nl/" target="_blank">
+                    <div class="flex h-14 my-6 bg-white" style="width: 400px; height: 108px">
+                        <img style="height: 108px;" src="websites/LogistiekCentrumDongen.png" alt="LogistiekCentrumDongen">
+                        <p class="m-auto text-2xl" style="width: 200px;">Logistiek Centrum Dongen</p>
+                    </div>
+                </a>
+                <a href="https://expertisecentrumkinderopvang.nl/" target="_blank">
+                    <div class="flex h-14 my-6 bg-white" style="width: 400px; height: 108px">
+                        <img style="height: 108px;" src="websites//ExpertisecentrumKinderopvang.png" alt="ExpertisecentrumKinderopvang">
+                        <p class="m-auto text-2xl" style="width: 200px;">Expertisecentrum Kinderopvang</p>
+                    </div>
+                </a>
+                <a href="https://www.smokkelmolen.be/" target="_blank">
+                    <div class="flex h-14 my-6 bg-white" style="width: 400px; height: 108px">
+                        <img style="height: 108px;" src="websites/Smokkelmolen.png" alt="Smokkelmolen">
+                        <p class="m-auto text-2xl">Smokkelmolen</p>
+                    </div>
+                </a>
+            </div>
+            <!-- Row MAATWERK -->
+            <div class="flex-row" style="margin-top: -30px;">
+                <a href="https://airtocheck.com/" target="_blank">
+                    <div class="flex h-14 my-6 bg-white" style="width: 400px; height: 108px">
+                        <img style="height: 108px;" src="maatwerk/Airtocheck.png" alt="Airtocheck">
+                        <p class="m-auto text-2xl">Airtocheck</p>
+                    </div>
+                </a>
+                <a href="https://andersom.amsterdam/" target="_blank">
+                    <div class="flex h-14 my-6 bg-white" style="width: 400px; height: 108px">
+                        <img style="height: 108px;" src="maatwerk/AndersomAmsterdam.png" alt="Andersom amsterdam">
+                        <p class="m-auto text-2xl">Andersom amsterdam</p>
+                    </div>
+                </a>
+                <a href="" target="_blank">
+                    <div class="flex h-14 my-6 bg-white" style="width: 400px; height: 108px">
+                        <img style="height: 108px;" src="websites/Airport Operations Online.png" alt="Schiphol">
+                        <p class="m-auto text-2xl">Schiphol</p>
+                    </div>
+                </a>
+            </div>
+            <!-- Row Video's -->
+            <div class="flex-row">
+                <h1 class="text-center text-4xl font-bold mb-10" style="color: black;">VIDEO'S</h1>
+                <a href="https://vimeo.com/569861501" target="_blank">
+                    <div class="flex h-14 my-6 bg-white" style="width: 400px; height: 108px">
+                        <img style="height: 108px;" src="thumbnails/Johns-rijopleiding.png" alt="John's rijopleiding">
+                        <p class="m-auto text-2xl ">John's rijopleiding</p>
+                    </div>
+                </a>
+                <a href="https://vimeo.com/568452886" target="_blank">
+                    <div class="flex h-14 my-6 bg-white" style="width: 400px; height: 108px">
+                        <img style="height: 108px;" src="thumbnails/Gezondheidscentrum-Kloosterpad.png" alt="Kloosterpad">
+                        <p class="m-auto text-2xl">Kloosterpad</p>
+                    </div>
+                </a>
+                <a href="https://vimeo.com/637048965" target="_blank">
+                    <div class="flex h-14 my-6 bg-white" style="width: 400px; height: 108px">
+                        <img style="height: 108px;" src="thumbnails/Ron-Bergers-Tuinen.png" alt="Ron Bergers Tuinen">
+                        <p class="m-auto text-2xl">Ron Bergers Tuinen</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Einde Voorbeeld: WEBSHOPS -->
+    <!-- scripts voor animaties -->
+    <script src="node_modules/keen-slider/keen-slider.js">
+    </script>
+    <script src="script/slider.js">
+    </script>
+    <script src="node_modules/animejs/lib/anime.min.js">
+    </script>
+    <script src="script/anime.js">
+    </script>
+    <script src="script/toolbox.js">
+    </script>
+    <script>
+        window.onbeforeunload = function() {
+            document.querySelector('body').style.marginTop = '0px';
+        }
+    </script>
+</body>
+
+</html>

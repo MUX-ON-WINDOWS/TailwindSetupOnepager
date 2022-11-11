@@ -1,0 +1,403 @@
+/* Einde Global */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+body {
+    margin: -8px;
+    background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* Einde Global */
+
+
+/* Begin banner */
+
+.begin {
+    background-image: url(bg1.webp);
+    background-size: cover;
+    position: relative;
+    height: 1080px;
+}
+
+.screen {
+    height: 110vh;
+}
+
+
+/* Einde banner */
+
+
+/* Begin MET WIE */
+
+.containerCircle {
+    position: relative;
+    width: 50px;
+    height: fit-content;
+    margin-left: 60px;
+    margin-right: 160px;
+    margin-top: 10px;
+}
+
+.circleCount {
+    position: absolute;
+    border: white 8px solid;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    top: -13px;
+}
+
+.text {
+    position: relative;
+    left: 85px;
+    top: 55px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 80px;
+    margin: 0px
+}
+
+.fadein {
+    position: absolute;
+    left: 55px;
+}
+
+.text1 {
+    left: 100px;
+}
+
+.textdesciption {
+    position: relative;
+    font-weight: bold;
+    left: 10px;
+    top: 160px;
+    width: 230px;
+}
+
+
+/* Einde MET WIE */
+
+.fade {
+    transform: translateY(0%);
+    opacity: 1;
+    transition: all 2000ms;
+}
+
+.grayout {
+    opacity: 0.2;
+}
+
+.keen-slider__slide {
+    transition: opacity 500ms;
+}
+
+.display {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: auto;
+}
+
+
+/* Begin Video */
+
+#vid {
+    position: relative;
+    top: 40px;
+    left: 50%;
+    margin-left: -850px;
+    background-color: #000;
+    width: 1700px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.video {
+    position: relative;
+}
+
+
+/* Einde Video */
+
+
+/* Begin Klanten review */
+
+.navigation-wrapper {
+    position: relative;
+    width: 1500px;
+    margin: auto;
+}
+
+.arrow {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    fill: #fff;
+    cursor: pointer;
+}
+
+.arrow--left {
+    left: 5px;
+    background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' %3E%3Cpath d='M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z' %3E%3C/path%3E%3C/svg%3E");
+}
+
+.arrow--right {
+    left: auto;
+    right: 5px;
+    background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' %3E%3Cpath d='M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+
+/* Begin hover animation voorbeelden */
+
+.fadeExample {
+    width: 600px;
+    height: 600px;
+    background-color: rgba(90, 90, 90, 0.75);
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.fadeExample:hover {
+    opacity: 1;
+}
+
+
+/* hover animatie toolbox */
+
+#T1 {
+    position: absolute;
+    width: 250px;
+    left: 95px;
+    top: 25px;
+    stroke-dasharray: 2000;
+}
+
+#T2 {
+    position: absolute;
+    width: 250px;
+    left: 88px;
+    top: 45px;
+    stroke-dasharray: 2000;
+}
+
+#T3 {
+    position: absolute;
+    width: 250px;
+    left: 88px;
+    top: 45px;
+    stroke-dasharray: 2000;
+}
+
+#T4 {
+    position: absolute;
+    width: 250px;
+    left: 75px;
+    top: 65px;
+    stroke-dasharray: 2000;
+}
+
+#T5 {
+    position: absolute;
+    width: 250px;
+    left: -243px;
+    top: 40px;
+    stroke-dasharray: 2000;
+    transform: scale(-1, 1);
+    transform-origin: center;
+}
+
+#T6 {
+    position: absolute;
+    width: 250px;
+    left: -243px;
+    top: 40px;
+    stroke-dasharray: 2000;
+    transform: scale(-1, 1);
+    transform-origin: center;
+}
+
+#T7 {
+    position: absolute;
+    width: 250px;
+    left: -250px;
+    top: 25px;
+    stroke-dasharray: 2000;
+    transform: scale(-1, 1);
+    transform-origin: center;
+}
+
+#T8 {
+    position: absolute;
+    width: 250px;
+    left: -243px;
+    top: -20px;
+    stroke-dasharray: 2000;
+    transform: scale(-1, -1);
+    transform-origin: center;
+}
+
+#T9 {
+    position: absolute;
+    width: 250px;
+    left: -243px;
+    top: -20px;
+    stroke-dasharray: 2000;
+    transform: scale(-1, -1);
+    transform-origin: center;
+}
+
+#T10 {
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    left: -193px;
+    top: -20px;
+    transform: scale(-1, -1);
+    transform-origin: center;
+    stroke-dasharray: 2000;
+}
+
+#T11 {
+    position: absolute;
+    width: 250px;
+    left: 88px;
+    top: -20px;
+    stroke-dasharray: 2000;
+    transform: scaleY(-1);
+    transform-origin: center;
+}
+
+#T12 {
+    position: absolute;
+    width: 250px;
+    left: 88px;
+    top: -20px;
+    stroke-dasharray: 2000;
+    transform: scaleY(-1);
+    transform-origin: center;
+}
+
+
+/* Einde hover animation voorbeelden */
+
+
+/* Begin background animation */
+
+.circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li {
+    z-index: -100;
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+}
+
+.circles li svg {
+    opacity: 0.3;
+}
+
+.right li {
+    right: -150px;
+    animation: animate 34s linear infinite;
+}
+
+.right li:nth-child(1) {
+    top: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+.right li:nth-child(2) {
+    top: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 24s;
+}
+
+.right li:nth-child(3) {
+    top: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.right li:nth-child(4) {
+    top: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 30s;
+}
+
+.right li:nth-child(5) {
+    top: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.right li:nth-child(6) {
+    top: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.right li:nth-child(7) {
+    top: 55%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.right li:nth-child(8) {
+    top: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 57s;
+}
+
+.right li:nth-child(9) {
+    top: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 47s;
+}
+
+.right li:nth-child(10) {
+    top: 10%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 25s;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateX(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 10%;
+    }
+    100% {
+        transform: translateX(-2200px) rotate(600deg);
+        opacity: 0.75;
+        border-radius: 10%;
+    }
+}

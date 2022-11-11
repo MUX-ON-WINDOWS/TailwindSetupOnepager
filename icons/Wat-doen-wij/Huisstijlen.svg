@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg" fill="#fff" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<path d="M128,384h224v64H128c-35.3,0-64-28.7-64-64V128H32c-17.7,0-32-14.3-32-32c0-17.7,14.3-32,32-32h32V32C64,14.3,78.3,0,96,0
+	c17.7,0,32,14.3,32,32V384z M384,128H160V64h224c35.3,0,64,28.7,64,64v256h32c17.7,0,32,14.3,32,32s-14.3,32-32,32h-32v32
+	c0,17.7-14.3,32-32,32s-32-14.3-32-32V128z"/>
+</svg>
